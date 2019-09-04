@@ -20,6 +20,9 @@ public class JumperController : MonoBehaviour {
 //    [HideInInspector]
 //    public GameManager gameManager;
 
+    [HideInInspector]
+    public JumperSpawner jumperSpawner;
+
     private bool dead = false;
 
     public LayerMask layerMask;
@@ -87,7 +90,10 @@ public class JumperController : MonoBehaviour {
     }
 
     void DestroyJumper() {
+        
         GameObject parent = transform.parent.gameObject;
-        Destroy(parent);
+        jumperSpawner.DestroyJumper(parent);
+//        GameObject parent = transform.parent.gameObject;
+//        Destroy(parent);
     }
 }

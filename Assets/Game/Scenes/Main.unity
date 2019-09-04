@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5a79c4ea7e8b240b1dff910135cc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
+  startLives: 3
   livesController: {fileID: 15910549}
   scoreText: {fileID: 224750945}
 --- !u!4 &99179859
@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumperPrefab: {fileID: 5198021942267141307, guid: 4f0e19f3e665af84783ff60331087d9d,
     type: 3}
+  jumpers: []
   spawnDelay: 3
   deltaRandomSpawn: 0.5
 --- !u!1 &130906632

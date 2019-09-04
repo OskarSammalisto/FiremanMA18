@@ -11,13 +11,15 @@ public class JumperSpawner : MonoBehaviour {
     public GameObject jumperPrefab;
 
     private float lastSpawnTime;
+    private bool stop = false;
+    private List<GameObject> jumpers = new List<GameObject>();
     
     [Range(0,5)]
     public float spawnDelay = 3.0f;
     [Range(0,2)]
     public float deltaRandomSpawn = 0.5f;
 
-   // private GameManager gameManager;
+    
     
     private float randomSpawnDelay;
     
@@ -37,7 +39,7 @@ public class JumperSpawner : MonoBehaviour {
 
     private void Update() {
         
-        if (Time.time > lastSpawnTime + randomSpawnDelay) {
+        if (!stop && Time.time > lastSpawnTime + randomSpawnDelay) {
             SpawnJumper();
         }
     }
@@ -46,11 +48,34 @@ public class JumperSpawner : MonoBehaviour {
         lastSpawnTime = Time.time;
         randomSpawnDelay = Random.Range(spawnDelay - deltaRandomSpawn, spawnDelay + deltaRandomSpawn);
         GameObject jumper = Instantiate(jumperPrefab);
-
-      // JumperController jumperController = jumper.GetComponentInChildren<JumperController>();
-     //  jumperController.gameManager = gameManager;
+        
+        jumpers.Add(jumper);
+        JumperController jumperController = jumper.GetComponentInChildren<JumperController>();
+        jumperController.jumperSpawner = this;
 
     }
 
+    public void DestroyJumper(GameObject jumper) {
+        
+        // ta bort jumper från listan
+        jumpers.Remove(jumper);
+        
+        //destroy jumper
+        Destroy(jumper);
+    }
+
+    public void Stop() {
+        stop = true;
+        
+        //gå igenom listan av jumpers och Destroy
+        for (int i = jumpers.Count - 1; i >= 0; i--) {
+           DestroyJumper(jumpers[i]);
+        }
+        
+//        foreach (var VARIABLE in jumpers) {
+//            jumpers.Remove(VARIABLE);
+//            Destroy(VARIABLE);
+//        }
+    }
     
 }
