@@ -11,6 +11,7 @@
             <e p="ButtonInput.cs" t="Include" />
             <e p="FiremanController.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="GameOverSignController.cs" t="Include" />
             <e p="JumperController.cs" t="Include" />
             <e p="JumperSpawner.cs" t="Include" />
             <e p="LivesController.cs" t="Include" />

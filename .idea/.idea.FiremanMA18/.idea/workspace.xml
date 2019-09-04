@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca638a0-fe8a-4ebf-bd28-1fc622203355" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FiremanMA18/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FiremanMA18/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FiremanMA18/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FiremanMA18/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FiremanMA18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FiremanMA18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/JumperController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/JumperController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/JumperSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/JumperSpawner.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/ButtonInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/GameOverSignController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/JumperController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/LivesController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -34,9 +34,10 @@
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/FiremanController.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/ButtonInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/LivesController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/JumperController.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/JumperSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Scripts/GameOverSignController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -92,7 +93,7 @@
       <workItem from="1567062532331" duration="5832000" />
       <workItem from="1567073699909" duration="35000" />
       <workItem from="1567148048708" duration="10824000" />
-      <workItem from="1567579920945" duration="5520000" />
+      <workItem from="1567579920945" duration="8086000" />
     </task>
     <servers />
   </component>
