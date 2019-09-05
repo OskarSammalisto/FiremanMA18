@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour {
         gameOverSign.SetActive(false);
     }
 
+    public int Points() {
+        return points;
+    }
+
     public void JumperCrashed() {
 
        if(!livesController.RemoveLive())

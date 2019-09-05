@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DangerousPosition
+  - Left
+  - Right
   layers:
   - Default
   - TransparentFX
